@@ -18,7 +18,7 @@ I used that command
 Deploying version v1, v2, or both:
 
     kubectl create -f Mirror_Example/
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
 
 ## Generate load
 
@@ -30,24 +30,24 @@ Deploying version v1, v2, or both:
 
 Control istio Config
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037780-08547780-49d0-11ea-8619-80c092bf3210.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037780-08547780-49d0-11ea-8619-80c092bf3210.png)
 
 **Overview Console**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
 
 **Inbound Metrics**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
 
 **Weight**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037995-7731d080-49d0-11ea-9108-3567fe1635cc.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037995-7731d080-49d0-11ea-9108-3567fe1635cc.png)
 
 **CLI on Server**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037807-14d8d000-49d0-11ea-913f-232db9095b09.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Mirror_Example](https://user-images.githubusercontent.com/3519706/74037807-14d8d000-49d0-11ea-913f-232db9095b09.png)
