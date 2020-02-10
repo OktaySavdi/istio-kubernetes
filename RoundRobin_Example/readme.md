@@ -34,7 +34,7 @@ Control istio Config
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73925474-2aba9800-48df-11ea-8e8f-230cfacda717.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74131115-b0e32100-4bf4-11ea-8b00-d6dd60478f22.png)
 
 **Overview Console**
 
