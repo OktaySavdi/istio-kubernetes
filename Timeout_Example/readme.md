@@ -19,7 +19,7 @@ I used that command
 Deploying version v1, v2, v3 or both:
 
     kubectl create -f Timeout_Example/
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74038548-78afc880-49d1-11ea-93df-bd08300e1009.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74038548-78afc880-49d1-11ea-93df-bd08300e1009.png)
 
 
 ## Generate load
@@ -32,20 +32,20 @@ Deploying version v1, v2, v3 or both:
 
 Control istio Config
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74128749-ee44b000-4bee-11ea-9d95-9449b7c0c60b.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74128749-ee44b000-4bee-11ea-9d95-9449b7c0c60b.png)
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74124991-2e069a00-4be5-11ea-91a1-b6e9f87dddab.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74131389-42529300-4bf5-11ea-9029-ba5ee766f85d.png)
 
 **Overview Console**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
 
 **Inbound Metrics**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
 
 **CLI on Server**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74102023-b4bd6780-4b50-11ea-83be-46282a3753cd.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74102023-b4bd6780-4b50-11ea-83be-46282a3753cd.png)
