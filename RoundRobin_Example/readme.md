@@ -19,7 +19,7 @@ Deploying version v1, v2 or both:
 
     kubectl create -f RoundRobin_Example/
     
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
 
 ## Generate load
 
@@ -30,20 +30,20 @@ Deploying version v1, v2 or both:
 
 Control istio Config
 
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74131115-b0e32100-4bf4-11ea-8b00-d6dd60478f22.png)
+![https://github.com/OktaySavdi/istio-exampless/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74131115-b0e32100-4bf4-11ea-8b00-d6dd60478f22.png)
 
 **Overview Console**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
 
 **Inbound Metrics**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
 
 **CLI on Server**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74030813-020acf00-49c1-11ea-9427-3d6ee1271eeb.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74030813-020acf00-49c1-11ea-9427-3d6ee1271eeb.png)
