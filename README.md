@@ -47,7 +47,7 @@ If the **EXTERNAL-IP** value is set, your environment has an external load balan
 
 If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environment does not provide an external load balancer for the ingress gateway. In this case, **you can access the gateway using the service’s node port.**
 
-## We did 10 examples on istio
+## We did 11 examples on istio
 
  **1. istio canary example** 
  
@@ -66,3 +66,7 @@ If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environm
  **8. istio session affinity example**
  
  **9. istio timeout example**
+ 
+ **10. istio fault injection example**
+  
+ **11. istio mTLS example**
