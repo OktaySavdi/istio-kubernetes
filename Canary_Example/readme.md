@@ -34,7 +34,7 @@ Control istio Config
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-examples/tree/master/Canary_Example](https://user-images.githubusercontent.com/3519706/74033119-86ac1c00-49c6-11ea-8834-10df4e35e78b.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/Canary_Example](https://user-images.githubusercontent.com/3519706/74132670-1a186380-4bf8-11ea-83d6-876c9fcb7960.png)
 
 **Overview Console**
 
