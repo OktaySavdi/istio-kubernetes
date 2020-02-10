@@ -19,7 +19,7 @@ I used that command
 Deploying version v1, v2, or both:
 
     kubectl create -f SessionAffinity_Example/
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
 
 ## Generate load
 
@@ -30,20 +30,20 @@ Deploying version v1, v2, or both:
 
 **Control istio Config**
 
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
 
 **Control Graph**
 
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73925864-c1875480-48df-11ea-9a6a-cb4df50250e5.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73925864-c1875480-48df-11ea-9a6a-cb4df50250e5.png)
 
 **Overview Console**
 
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
 
 **Inbound Metrics**
 
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
 
 **CLI on Server**
 
-![https://github.com/OktaySavdi/istio-example/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/74103657-fa812c80-4b5e-11ea-951e-600616d0a045.png)
+![https://github.com/OktaySavdi/istio-examples/new/master/SessionAffinity_Example](https://user-images.githubusercontent.com/3519706/74103657-fa812c80-4b5e-11ea-951e-600616d0a045.png)
