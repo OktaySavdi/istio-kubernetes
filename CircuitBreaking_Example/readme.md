@@ -20,7 +20,7 @@ Deploying version v1, v2, v4 or both:
 
     kubectl create -f CircuitBreaking_Example/
     
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103391-c147bd00-4b5c-11ea-8394-3e3a8717594f.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103391-c147bd00-4b5c-11ea-8394-3e3a8717594f.png)
 
 
 
@@ -34,23 +34,23 @@ Deploying version v1, v2, v4 or both:
 
 Control istio Config
 
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649385-b985a580-4690-11ea-8065-835446113ac8.png)
 
 **Control Graph**
 
-![ttps://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74125216-b422e080-4be5-11ea-816f-9fbfe0fddce7.png)
+![ttps://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74125216-b422e080-4be5-11ea-816f-9fbfe0fddce7.png)
 
 **Overview Console**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649574-1f722d00-4691-11ea-8f8f-f9ce8f21b4fa.png)
 
 **Inbound Metrics**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/73649621-3d3f9200-4691-11ea-9a4f-d12737d9c59a.png)
 
 **CLI on Server**
 
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103310-31097800-4b5c-11ea-9b9a-7e97fe57b96c.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103310-31097800-4b5c-11ea-9b9a-7e97fe57b96c.png)
 
 or try with **siege**
 
@@ -64,5 +64,5 @@ or try with **siege**
 
     siege -r 10 -c 4 -v http://deneme.10.10.10.10.nip.io:30889/
 
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103538-dbce6600-4b5d-11ea-9528-5e21a008d092.png)
-![https://github.com/OktaySavdi/istio-example/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103548-f274bd00-4b5d-11ea-88da-4bd0be1f1e00.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103538-dbce6600-4b5d-11ea-9528-5e21a008d092.png)
+![https://github.com/OktaySavdi/istio-examples/tree/master/CircuitBreaking_Example](https://user-images.githubusercontent.com/3519706/74103548-f274bd00-4b5d-11ea-88da-4bd0be1f1e00.png)
