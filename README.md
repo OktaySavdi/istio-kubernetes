@@ -50,11 +50,19 @@ If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environm
 ## We did 10 examples on istio
 
  **1. istio canary example** 
+ 
  **2. istio circuit breaking example**
+ 
  **3. istio header example**
+ 
  **4. istio mirror example**
+ 
  **5. istio oneway example**
+ 
  **6. istio random example**
+ 
  **7. istio round robin example**
+ 
  **8. istio session affinity example**
+ 
  **9. istio timeout example**
