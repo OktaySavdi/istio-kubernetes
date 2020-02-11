@@ -16,7 +16,7 @@ I used that command
 
     kubectl label namespace helloworld istio-injection=enabled
 
-Deploying version v1, v2, or both:
+Deploying version v1, v2 or both:
 
     kubectl create -f Canary_Example/
 ![https://github.com/OktaySavdi/istio-examples/tree/master/Canary_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
