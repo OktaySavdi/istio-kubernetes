@@ -59,6 +59,7 @@ kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=ingressg
 # Get the logs of the first istio-pilot pod
 # Shows issues with configurations or connecting to the Envoy proxies
 kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300
+```
 
 You have two containers in a pod
 
