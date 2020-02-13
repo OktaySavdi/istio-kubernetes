@@ -51,6 +51,15 @@ If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environm
 
 Some tips and tricks that you might find handy
 
+```json
+# Get the logs of the first istio-ingressgateway pod
+# Shows what happens with incoming requests and possible errors
+kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=ingressgateway -o=jsonpath="{.items[0].metadata.name}") --tail=300
+
+# Get the logs of the first istio-pilot pod
+# Shows issues with configurations or connecting to the Envoy proxies
+kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300
+
 You have two containers in a pod
 
 ```bash
