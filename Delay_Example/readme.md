@@ -60,6 +60,9 @@ or try with siege
     siege --version
 
 **Siege Load**
+```json
+siege -r 10 -c 4 -v http://deneme.10.10.10.10.nip.io:30889/
+```
 
 ![https://github.com/OktaySavdi/istio-example/tree/master/Delay_Example](https://user-images.githubusercontent.com/3519706/74216052-3da0e400-4cb4-11ea-8af8-1e0e3943cdbf.png)
 
