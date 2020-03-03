@@ -24,9 +24,11 @@ Deploying version v1, v2, v3 or both:
 
 ## Generate load
 
-    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/"; sleep 0.5; echo -e '\n'; done
+    istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
     
-    while true; do curl -s "http://10.10.10.10:30292/"; sleep 0.5; echo -e '\n'; done 
+    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
+    
+    while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
 
 ## Monitoring and Control
 
