@@ -22,9 +22,10 @@ Deploying version v1, v2 or both:
 ![https://github.com/OktaySavdi/istio-examples/tree/master/Canary_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
 
 ## Generate load
-
-    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/"; sleep 0.5; echo -e '\n'; done
-    while true; do curl -s "http://10.10.10.10:30292/"; sleep 0.5; echo -e '\n'; done 
+    istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
+    
+    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
+    while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
 
 ## Monitoring and Control
 
