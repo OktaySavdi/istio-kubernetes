@@ -6,6 +6,8 @@ We will distribute load with circuitbreaking within the scope of istio-example
 
 This feature allows setting limits of calls to individual hosts within a service. Such as the number of concurrent connections or how many times calls to this host have failed and etc. Once that limit has been reached the circuit breaker “trips” and stops further connections to that host. Circuit breaker pattern enables fast failure rather than clients trying to connect to an overloaded or failing host.
 
+Circuit breaker rules are applied in destinationRulewith the settings applying to each individual host in the service, because these configurations are applied in a load balancing pool.
+
 This sample includes three versions(v1,v2,v4) of a simple helloworld service that returns its project version when called. It can be used as a test service when experimenting with version routing.
 
 This service is also used to demonstrate  circuitbreaking deployments working in conjunction. See  circuitbreaking deployments using Istio. Code repo for image [github\dotnet-example](https://github.com/OktaySavdi/dotnet-example)
