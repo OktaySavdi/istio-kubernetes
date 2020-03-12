@@ -31,7 +31,28 @@ Deploying version v1, v2, v4 or both:
     
 ![https://github.com/OktaySavdi/istio-example/tree/master/FaultInjection_Example](https://user-images.githubusercontent.com/3519706/74103391-c147bd00-4b5c-11ea-8394-3e3a8717594f.png)
 
-
+For Delay Example
+```yaml
+kind: VirtualService
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: helloworld
+spec:
+  hosts:
+    - "*" # Copy the value in the Gateway hosts
+  gateways:
+    - helloworld/helloworld-gateway # Gateway Name
+  http:
+    - fault:
+        delay:
+          percentage: 503
+            value: 0.1
+        fixedDelay: 5s
+      route:
+        - destination:
+            host: helloworld # The Service DNS name
+            subset: app-helloworld # The name defined in the DestinationRule
+```
 
 ## Generate load
 
