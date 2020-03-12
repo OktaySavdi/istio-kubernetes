@@ -8,6 +8,10 @@ Fault injection mechanism is used to test the failure recovery capacity of the a
 
 This helps to ensure the failure recovery policies are correctly configured and ain’t incompatible or too restrictive, potentially resulting in critical services being unavailable.
 
+There are two types of faults and both can be configured using `virtualservice`.
+
+-   Delays — are timing failures. They mimic increased network latency or an overloaded upstream service.
+-   Aborts — are crash failures. They mimic failures in upstream services. Aborts usually manifest in the form of HTTP error codes or TCP connection failures.
 
 This sample includes two versions(v1,v2,v4) of a simple helloworld service that returns its project version when called. It can be used as a test service when experimenting with version routing.
 
