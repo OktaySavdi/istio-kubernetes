@@ -4,6 +4,11 @@
 
 We will distribute load with fault injection within the scope of istio-example
 
+Fault injection mechanism is used to test the failure recovery capacity of the application after configuring the network, including failure recovery policies.
+
+This helps to ensure the failure recovery policies are correctly configured and ain’t incompatible or too restrictive, potentially resulting in critical services being unavailable.
+
+
 This sample includes two versions(v1,v2,v4) of a simple helloworld service that returns its project version when called. It can be used as a test service when experimenting with version routing.
 
 This service is also used to demonstrate  fault injection deployments working in conjunction. See fault injection deployments using Istio. Code repo for image [github\dotnet-example](https://github.com/OktaySavdi/dotnet-example)
