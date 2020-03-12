@@ -4,6 +4,8 @@
 
 We will distribute load with timeout within the scope of istio-example
 
+The default timeout for HTTP requests is 15 seconds. This makes sure that the services won’t wait for a long time waiting for a response or the service will be failed during a defined time.
+
 This sample includes three versions(v1,v2,v3) of a simple helloworld service that returns its project version when called. It can be used as a test service when experimenting with version routing.
 
 This service is also used to demonstrate  timeout deployments working in conjunction. See timeout deployments using Istio. Code repo for image [github\dotnet-example](https://github.com/OktaySavdi/dotnet-example)
