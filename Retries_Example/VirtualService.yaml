@@ -14,5 +14,5 @@ spec:
             host: helloworld # The Service DNS name
             subset: version-v2 # The name defined in the DestinationRule
       retries:
-        attempts: 3
-        perTryTimeout: 2s
+        attempts: 3 # Number of retries for a given request. 
+        perTryTimeout: 2s # Timeout per retry attempt for a given request. format: 1h/1m/1s/1ms. MUST BE >=1ms.
