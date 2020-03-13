@@ -159,7 +159,7 @@ Look for  `route_config`, containing  `"name": "80"`  and you should see entries
 
 ```
 
-## We did 12 examples on istio
+## We did 13 examples on istio
 
  **1. istio canary example** 
  
@@ -184,3 +184,5 @@ Look for  `route_config`, containing  `"name": "80"`  and you should see entries
  **11. istio delay example**
   
  **12. istio mTLS example**
+ 
+ **13. istio retries example**
