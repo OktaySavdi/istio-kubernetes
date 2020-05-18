@@ -38,11 +38,11 @@ Istio service mesh provides several capabilities for traffic monitoring, access 
 # Determining the ingress IP and ports
 
 Execute the following command to determine if your Kubernetes cluster is running in an environment that supports external load balancers:
-
-    $ kubectl get svc istio-ingressgateway -n istio-system
-    NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)                                      AGE
-    istio-ingressgateway   LoadBalancer   172.21.109.129   130.211.10.121  80:31380/TCP,443:31390/TCP,31400:31400/TCP   17h
-
+```ruby
+$ kubectl get svc istio-ingressgateway -n istio-system
+NAME                   TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)                                      AGE
+istio-ingressgateway   LoadBalancer   172.21.109.129   130.211.10.121  80:31380/TCP,443:31390/TCP,31400:31400/TCP   17h
+```
 If the **EXTERNAL-IP** value is set, your environment has an external load balancer that you can use for the ingress gateway.
 
 If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environment does not provide an external load balancer for the ingress gateway. In this case, **you can access the gateway using the service’s node port.**
@@ -51,7 +51,7 @@ If the **EXTERNAL-IP** value is <none> (or perpetually <pending>), your environm
 
 Some tips and tricks that you might find handy
 
-```json
+```ruby
 # Get the logs of the first istio-ingressgateway pod
 # Shows what happens with incoming requests and possible errors
 
@@ -65,25 +65,25 @@ kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o
 
 You have two containers in a pod
 
-```bash
+```ruby
 kubectl get pods -o jsonpath="{.items[*].spec.containers[*].name}" -l app=helloworld -n helloworld
 ```
 
 From these images
 
-```bash
+```ruby
 kubectl get pods -o jsonpath="{.items[*].spec.containers[*].image}" -l app=helloworld -n helloworld
 ```
 
 Pod IP If you need
 
-```bash
+```ruby
 kubectl get pods -o jsonpath='{.items[*].status.podIP}' -l app=helloworld -n helloworld
 ```
 
 Get the pod ids
 
-```bash
+```ruby
 CPOD=$(kubectl get pods -o jsonpath='{.items[*].metadata.name}' -l version=safe -n helloworld)
 PPOD=$(kubectl get pods -o jsonpath='{.items[*].metadata.name}' -l version=risky -n helloworld)
 RPOD1=$(kubectl get pods -o jsonpath='{.items[*].metadata.name}' -l app=helloworld,version=safe -n helloworld)
@@ -92,7 +92,7 @@ RPOD2=$(kubectl get pods -o jsonpath='{.items[*].metadata.name}' -l app=hellowor
 
 Dive into the istio-proxy container
 
-```bash
+```ruby
 kubectl exec -it $CPOD -c istio-proxy -n helloworld -- sh
 
 cd /etc/istio/proxy
@@ -103,13 +103,13 @@ cat envoy-rev0.json
 
 The pods all see each other’s services
 
-```bash
+```ruby
 kubectl exec -it $CPOD -c helloworld -n helloworld -- curl http://helloworld/istio
 kubectl exec -it $CPOD -c helloworld -n helloworld -- curl http://helloworld/istio
 kubectl exec -it $RPOD2 -c helloworld -n helloworld -- curl http://helloworld/istio
 ```
 
-```bash
+```ruby
 kubectl exec -it $CPOD -c helloworld -n helloworld -- curl http://localhost:15000/config_dump > envoyfile.json
 ```
 
