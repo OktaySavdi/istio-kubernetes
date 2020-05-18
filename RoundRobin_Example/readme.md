@@ -12,23 +12,23 @@ This service is also used to demonstrate roundrobin deployments working in conju
 The following commands assume you have [automatic sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) enabled in your cluster. If not, you'll need to modify them to include [manual sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#manual-sidecar-injection).
 
 I used that command
-
-    kubectl label namespace helloworld istio-injection=enabled
-
+```ruby
+kubectl label namespace helloworld istio-injection=enabled
+```
 Deploying version v1, v2 or both:
-
-    kubectl create -f RoundRobin_Example/
-    
+```ruby
+kubectl create -f RoundRobin_Example/
+```  
 ![https://github.com/OktaySavdi/istio-examples/tree/master/RoundRobin_Example](https://user-images.githubusercontent.com/3519706/74125496-8ab68480-4be6-11ea-8839-a9855d951440.png)
 
 ## Generate load
-
-    istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
+```ruby
+istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
     
-    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
+while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
     
-    while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
-
+while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
+```
 ## Monitoring and Control
 
 Control istio Config
