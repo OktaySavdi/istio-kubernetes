@@ -15,23 +15,24 @@ This service is also used to demonstrate  timeout deployments working in conjunc
 The following commands assume you have [automatic sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) enabled in your cluster. If not, you'll need to modify them to include [manual sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#manual-sidecar-injection).
 
 I used that command
-
-    kubectl label namespace helloworld istio-injection=enabled
-
+```ruby
+kubectl label namespace helloworld istio-injection=enabled
+```
 Deploying version v1, v2, v3 or both:
-
-    kubectl create -f Timeout_Example/
+```ruby
+kubectl create -f Timeout_Example/
+```
 ![https://github.com/OktaySavdi/istio-examples/tree/master/Timeout_Example](https://user-images.githubusercontent.com/3519706/74038548-78afc880-49d1-11ea-93df-bd08300e1009.png)
 
 
 ## Generate load
-
-    istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
+```ruby
+istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
     
-    while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
+while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
     
-    while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
-
+while true; do curl -s "http://10.10.10.10:$istio_ingress/istio"; sleep 0.5; echo -e '\n'; done 
+```
 ## Monitoring and Control
 
 Control istio Config
