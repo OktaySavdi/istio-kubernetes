@@ -14,25 +14,27 @@ This service is also used to demonstrate mTLS deployments working in conjunction
 The following commands assume you have [automatic sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection) enabled in your cluster. If not, you'll need to modify them to include [manual sidecar injection](https://istio.io/docs/setup/additional-setup/sidecar-injection/#manual-sidecar-injection).
 
 I used that command
-
-    kubectl label namespace helloworld istio-injection=enabled
+```ruby
+kubectl label namespace helloworld istio-injection=enabled
+```
 
 Deploying version v1, v2 or both:
-
-    kubectl create -f mTLS_Example/
+```ruby
+kubectl create -f mTLS_Example/
+```
     
 ![https://github.com/OktaySavdi/istio-examples/tree/master/mTLS_Example](https://user-images.githubusercontent.com/3519706/74230323-33431200-4cd5-11ea-82d1-b3af33463205.png)
 
 To enable mTLS:
 
-```bash
+```ruby
 kubectl create -f istiofiles/authentication-enable-tls.yml -n tutorial
 kubectl create -f istiofiles/destination-rule-tls.yml -n tutorial
 ```
 
 Check the mTLS by  _sniffing_  traffic between services, which is a bit more tedious, open a new terminal tab and run next command:
 
-```bash
+```ruby
 CUSTOMER_POD=$(kubectl get pod | grep helloworld-v1| awk '{ print $1}' )
 
 kubectl exec -it $CUSTOMER_POD -c istio-proxy /bin/bash
@@ -55,7 +57,7 @@ Capture traffic from  `eth0`  (or your interface) of port  `8080`  and network  
 
 So now go to a terminal and execute:
 
-```bash
+```ruby
 curl http://10.10.10.10:30292/istio
 helloworld-v2-758f56497f-bdxfn | This is Project:1 | CallNumber: 1
 ```
