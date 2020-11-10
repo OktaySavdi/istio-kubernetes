@@ -26,7 +26,7 @@ kubectl create -f Canary_Example/
 ```ruby
 istio_ingress="$(kubectl get svc istio-ingressgateway --namespace istio-system --output 'jsonpath={.spec.ports[?(@.port==80)].nodePort}')"
 or
-GATEWAY_URL=$(kubectl get route istio-ingressgateway -n istio-system -o template --template '{{ "http://" }}{{ .spec.host }}')
+export GATEWAY_URL=$(kubectl get route istio-ingressgateway -n istio-system -o template --template '{{ "http://" }}{{ .spec.host }}')
     
 while true; do curl -s "http://[NodeIP]:[IstioIngressNodeport]/istio"; sleep 0.5; echo -e '\n'; done
     
