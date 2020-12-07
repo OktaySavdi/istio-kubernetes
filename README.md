@@ -191,6 +191,5 @@ Look for  `route_config`, containing  `"name": "80"`  and you should see entries
 ```ruby
 https://istio.io/v1.4/docs/reference/config/installation-options/
 https://istio.io/v1.4/blog/2019/performance-best-practices/
-https://github.com/istio/tools/blob/3ac7ab40db8a0d595b71f47b8ba246763ecd6213/perf/istio-install
-/values.yaml
+https://github.com/istio/tools/blob/3ac7ab40db8a0d595b71f47b8ba246763ecd6213/perf/istio-install/values.yaml
 ```
