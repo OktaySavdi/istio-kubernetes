@@ -187,7 +187,7 @@ Look for  `route_config`, containing  `"name": "80"`  and you should see entries
  
  **13. istio retries example**
 
- **reference **
+ **reference**
 ```ruby
 https://istio.io/v1.4/docs/reference/config/installation-options/
 https://istio.io/v1.4/blog/2019/performance-best-practices/
