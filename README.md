@@ -9,7 +9,7 @@ Istio service mesh provides several capabilities for traffic monitoring, access 
 -   Istio service mesh is an intentionally designed abstraction that has both a control plane and a data plane.
 -   Istio is a service mesh created by the combined efforts of IBM, Google, and Lyft. The sidecar patterns are enabled by the Envoy proxy and are based on containers.
 
-![https://github.com/OktaySavdi/istio-example](https://user-images.githubusercontent.com/3519706/73640623-a6b6a500-467f-11ea-8dd0-a5c69161654a.png)
+![image](https://user-images.githubusercontent.com/3519706/116872101-fe92e180-ac1d-11eb-80fc-305583cf7a01.png)
 
 **Envoy**
 
