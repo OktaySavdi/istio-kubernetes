@@ -6,7 +6,7 @@ metadata:
     app: helloworld
 spec:
   ports:
-  - port: 80
+  - port: 8080
     name: http
   type: ClusterIP
   selector:
@@ -38,7 +38,7 @@ spec:
             cpu: "100m"
         imagePullPolicy: Always #IfNotPresent
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -66,4 +66,4 @@ spec:
             cpu: "100m"
         imagePullPolicy: Always #IfNotPresent
         ports:
-        - containerPort: 80
+        - containerPort: 8080
