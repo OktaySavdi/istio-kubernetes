@@ -81,6 +81,37 @@ Pod IP If you need
 kubectl get pods -o jsonpath='{.items[*].status.podIP}' -l app=helloworld -n helloworld
 ```
 
+### We can also see the clusters that have been configured:
+```ruby
+istioctl proxy-config clusters deploy/web-api.istioinaction
+```
+### If we want to see more information about how the cluster for recommendation.istioinaction has been configured by Istio, run this command:
+```ruby
+istioctl proxy-config clusters deploy/web-api.istioinaction --fqdn recommendation.istioinaction.svc.cluster.local -o json
+```
+### Check the route configuration for istio-ingressgateway in the istio-system namespace:
+```ruby
+istioctl pc route deploy/istio-ingressgateway.istio-ingress
+```
+### The TLS/SSL secret for the istioinaction.io hostname should now be missing. Let's run analyze:
+```ruby
+istioctl analyze -n istio-ingress
+```
+### Here we can see all of the workloads in the mesh with useful details:
+```ruby
+istioctl proxy-status
+```
+### To configure just a specific module for debug:
+```ruby
+istioctl proxy-config log deploy/web-api -n istioinaction --level info
+
+istioctl proxy-config log deploy/web-api -n istioinaction --level connection:debug,conn_handler:debug,filter:debug,router:debug,http:debug,upstream:debug
+```
+### See the Istio docs for a full list of debugging paths.
+```ruby
+kubectl exec deploy/istiod-1-11-5 -n istio-system -- curl localhost:15014/debug/registryz
+```
+
 Get the pod ids
 
 ```ruby
