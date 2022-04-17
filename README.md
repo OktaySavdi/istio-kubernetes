@@ -154,52 +154,6 @@ kubectl exec -it $RPOD2 -c helloworld -n helloworld -- curl http://helloworld/is
 kubectl exec -it $CPOD -c helloworld -n helloworld -- curl http://localhost:15000/config_dump > envoyfile.json
 ```
 
-Look for  `route_config`, containing  `"name": "80"`  and you should see entries for customer, preference and recommendation
-
-```json
-           "stream_idle_timeout": "0s",
-           "normalize_path": true,
-           "route_config": {
-            "name": "inbound|80|http|helloworld.helloworld.svc.k8s.nip.io",
-            "virtual_hosts": [
-             {
-              "name": "inbound|http|80",
-              "domains": [
-               "*"
-              ],
-              "routes": [
-               {
-                "match": {
-                 "prefix": "/"
-                },
-                "decorator": {
-                 "operation": "helloworld.helloworld.svc.k8s.nip.io:80/*"
-                },
-                "typed_per_filter_config": {
-                 "mixer": {
-                  "@type": "type.googleapis.com/istio.mixer.v1.config.client.ServiceConfig",
-                  "disable_check_calls": true,
-                  "mixer_attributes": {
-                   "attributes": {
-                    "destination.service.host": {
-                     "string_value": "helloworld.helloworld.svc.k8s.nip.io"
-                    },
-                    "destination.service.name": {
-                     "string_value": "helloworld"
-                    },
-                    "destination.service.namespace": {
-                     "string_value": "helloworld"
-                    },
-                    "destination.service.uid": {
-                     "string_value": "istio://helloworld/services/helloworld"
-                    }
-                   }
-                  }
-                 }
-                },
-
-```
-
 ## We did 13 examples on istio
 
  **1. istio canary example** 
