@@ -35,6 +35,12 @@ Istio service mesh provides several capabilities for traffic monitoring, access 
 
 -  Collects statistics on machines
 
+**Component**
+
+VirtualService  : A virtualservice enables us to configure custom routing rules to the service mesh
+
+DestinationRule :
+
 # Determining the ingress IP and ports
 
 Execute the following command to determine if your Kubernetes cluster is running in an environment that supports external load balancers:
