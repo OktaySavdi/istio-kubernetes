@@ -35,11 +35,11 @@ Istio service mesh provides several capabilities for traffic monitoring, access 
 
 -  Collects statistics on machines
 
-**Component**
+**Consept**
 
 VirtualService  : A virtualservice enables us to configure custom routing rules to the service mesh
 
-DestinationRule :
+DestinationRule : Defining which pods should be part of each subset
 
 # Determining the ingress IP and ports
 
