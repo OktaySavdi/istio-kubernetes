@@ -5,7 +5,7 @@ metadata:
   name: helloworld
 spec:
   hosts:
-    - "helloworld"  # The Service name that we're applying routing rules to.
+    - "*"  # The Service name that we're applying routing rules to.
   gateways:
     - helloworld-gateway
   http:
