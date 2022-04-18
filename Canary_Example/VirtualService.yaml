@@ -5,7 +5,7 @@ metadata:
   name: helloworld
 spec:
   hosts:
-    - "*"  # The Service DNS (ie the regular K8S Service) name that we're applying routing rules to.
+    - "helloworld"  # The Service name that we're applying routing rules to.
   gateways:
     - helloworld-gateway
   http:
