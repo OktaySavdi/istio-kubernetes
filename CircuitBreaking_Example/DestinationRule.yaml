@@ -14,6 +14,6 @@ spec:
         maxConnections: 1 #Maximum number of HTTP1 /TCP connections to a destination host.
     outlierDetection:
       baseEjectionTime: 3m #Minimum ejection duration.
-      consecutiveErrors: 2 #Number of errors before a host is ejected from the connection pool
+      consecutive5xxErrors: 2 #Number of errors before a host is ejected from the connection pool
       interval: 10s #Time interval between ejection sweep analysis
       maxEjectionPercent: 100 #Maximum % of hosts in the load balancing pool for the upstream service that can be ejected.
