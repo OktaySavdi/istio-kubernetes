@@ -78,9 +78,7 @@ kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=ingressg
 
 kubectl -n istio-system logs $(kubectl -n istio-system get pods -listio=pilot -o=jsonpath="{.items[0].metadata.name}") discovery --tail=300
 ```
-
 You have two containers in a pod
-
 ```ruby
 kubectl get pods -o jsonpath="{.items[*].spec.containers[*].name}" -l app=helloworld -n helloworld
 ```
@@ -96,7 +94,11 @@ Pod IP If you need
 ```ruby
 kubectl get pods -o jsonpath='{.items[*].status.podIP}' -l app=helloworld -n helloworld
 ```
-
+### You can see profile
+```ruby
+istioctl profile dump default 
+istioctl profile dump default >config.yaml
+```
 ### We can also see the clusters that have been configured:
 ```ruby
 istioctl proxy-config clusters deploy/web-api.istioinaction
