@@ -99,6 +99,10 @@ kubectl get pods -o jsonpath='{.items[*].status.podIP}' -l app=helloworld -n hel
 istioctl profile dump default 
 istioctl profile dump default >config.yaml
 ```
+### Generating yaml manifest
+```ruby
+istioctl manifest generate -f file_generate.yaml 
+```
 ### We can also see the clusters that have been configured:
 ```ruby
 istioctl proxy-config clusters deploy/web-api.istioinaction
